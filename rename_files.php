@@ -3,6 +3,7 @@
 	<head>
 		<title>Recursively Find and Rename Files</title>
 		<link rel='stylesheet' type='text/css' href='bootstrap.min.css'>
+		<meta charset='utf-8'>
 	</head>
 	<body>
 		<div class='container'>
@@ -86,6 +87,7 @@
 		?>
 			<div class='col-sm-6 col-sm-offset-3'>
 				<h3>Automatically rename files</h3>
+				<div class='text-warning'>Make sure that the specified folder is NOT currently opened or beign used by the explorer or any other application</div>
 				<hr/>
 				<form method='post'>
 					<div class='form-group' >
@@ -98,7 +100,7 @@
 					</div>
 					<div class='form-group' >
 						<label for='folder'>Folder</label>
-						<input type='text' name='folder' placeholder='C:\.....'  value='<?php echo $folder; ?>' class='form-control input-sm' />
+						<input type='text' name='folder' id='folder' placeholder='C:\.....'  value='<?php echo $folder; ?>' class='form-control input-sm' />
 					</div>
 					<div class='checkbox' >
 						<label>
